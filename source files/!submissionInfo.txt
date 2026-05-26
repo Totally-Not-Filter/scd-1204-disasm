@@ -1,0 +1,92 @@
+Common Disc Info:
+	Title: Sonic The Hedgehog CD
+	Foreign Title (Non-latin): ソニック・ザ・ヘッジホッグCD
+	System: Sega CD / Mega CD
+	Media Type: CD
+	Category: Preproduction
+	Region: Japan
+	Languages: English
+	Disc Serial: 0000000
+
+	Ringcode Information:
+		Mastering Code (laser branded/etched): 23044B-128
+	EXE/Build Date: 1992-12-04
+	Error Count: 0
+	Comments: Written in marker on CD-R - "CD-SONIC Ver0.02 遊星セガワールド版 2/4 '93.5.13", this build was used for the 1992 Yuusei Sega World expo in Japan.
+
+Version and Editions:
+	Version: 0.02
+	Edition/Release: Beta
+
+Extras:
+	Primary Volume Descriptor (PVD):
+
+0320 : 20 20 20 20 20 20 20 20  20 20 20 20 20 30 30 30                000
+0330 : 30 30 30 30 30 30 30 30  30 30 30 30 30 00 30 30   0000000000000.00
+0340 : 30 30 30 30 30 30 30 30  30 30 30 30 30 30 00 30   00000000000000.0
+0350 : 30 30 30 30 30 30 30 30  30 30 30 30 30 30 30 00   000000000000000.
+0360 : 30 30 30 30 30 30 30 30  30 30 30 30 30 30 30 30   0000000000000000
+0370 : 00 01 00 00 00 00 00 00  00 00 00 00 00 00 00 00   ................
+
+	Header:
+
+0100 : 53 45 47 41 20 4D 45 47  41 20 44 52 49 56 45 20   SEGA MEGA DRIVE 
+0110 : 28 43 29 53 45 47 41 20  31 39 39 33 2E 41 50 52   (C)SEGA 1993.APR
+0120 : 43 44 2D 53 4F 4E 49 43  20 54 48 45 20 48 45 44   CD-SONIC THE HED
+0130 : 47 45 48 4F 47 20 20 20  20 20 20 20 20 20 20 20   GEHOG           
+0140 : 20 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20                   
+0150 : 43 44 2D 53 4F 4E 49 43  20 54 48 45 20 48 45 44   CD-SONIC THE HED
+0160 : 47 45 48 4F 47 20 20 20  20 20 20 20 20 20 20 20   GEHOG           
+0170 : 20 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20                   
+0180 : 58 58 20 30 30 30 30 30  30 30 30 2D 30 30 20 20   XX 00000000-00  
+0190 : 4A 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20   J               
+01A0 : 20 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20                   
+01B0 : 20 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20                   
+01C0 : 20 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20                   
+01D0 : 20 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20                   
+01E0 : 20 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20                   
+01F0 : 4A 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20   J               
+
+Tracks and Write Offsets:
+	DAT:
+
+<rom name="Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 1).bin" size="18823056" crc="cf84e58c" md5="76193536b059c14f1d652d7e4d9ddebc" sha1="c5e5cf0d8ffe2d6004b38fd57c011935de159bc4" />
+<rom name="Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 2).bin" size="19084128" crc="98d5d1bc" md5="115e9dab10a852f0429a4dfb41eb0421" sha1="1ca7b6a3d647cb0aca1acf8d0a7da3bb0a47704a" />
+<rom name="Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 3).bin" size="17571792" crc="f1e3b7cd" md5="932496535779663bc2177c11cb53f875" sha1="47f31c40851d5c77c8e3c7fb4b39640874e2801d" />
+<rom name="Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 4).bin" size="16339344" crc="4f8a0e31" md5="1cd3115aca02725146a9a2ecb00fefc1" sha1="bdddf4231cf0d407b17b7515442b3094df8e39aa" />
+<rom name="Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 5).bin" size="14236656" crc="5c71e247" md5="4103ca87ae4bb39df5dbe00a5fbbdf95" sha1="f008418a584f6212f3f33c71969e91116016fed7" />
+<rom name="Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 6).bin" size="14829360" crc="6b7bf876" md5="288484e471b0ab3386e076e1c730ee6e" sha1="3594c716ed834ba889cb8e26532ac29b711e80c4" />
+<rom name="Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 7).bin" size="17621184" crc="2949f83a" md5="8bd52023baad6fd5590ccf21c573f4cd" sha1="d5da0a756f6e821ad4296bf8c6440ddf433c7536" />
+
+	Cuesheet:
+
+CATALOG 0000000000000
+FILE "Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 1).bin" BINARY
+  TRACK 01 MODE1/2352
+    INDEX 01 00:00:00
+FILE "Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 2).bin" BINARY
+  TRACK 02 AUDIO
+    INDEX 00 00:00:00
+    INDEX 01 00:02:00
+FILE "Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 3).bin" BINARY
+  TRACK 03 AUDIO
+    INDEX 00 00:00:00
+    INDEX 01 00:02:00
+FILE "Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 4).bin" BINARY
+  TRACK 04 AUDIO
+    INDEX 00 00:00:00
+    INDEX 01 00:02:00
+FILE "Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 5).bin" BINARY
+  TRACK 05 AUDIO
+    INDEX 00 00:00:00
+    INDEX 01 00:02:00
+FILE "Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 6).bin" BINARY
+  TRACK 06 AUDIO
+    INDEX 00 00:00:00
+    INDEX 01 00:02:00
+FILE "Sonic the Hedgehog CD (Dec 4, 1992 prototype) (Track 7).bin" BINARY
+  TRACK 07 AUDIO
+    INDEX 00 00:00:00
+    INDEX 01 00:02:00
+
+	Write Offset: 8

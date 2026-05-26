@@ -1,0 +1,35 @@
+{
+    "Flex": 2,
+    "name": "",
+    "node": "14e92c73-0584-44ef-ae08-334e364492ee",
+    "objects": [
+        {
+            "name": "Title Screen",
+            "children": [
+                {
+                    "format": "Sonic 1.js",
+                    "name": "object",
+                    "palettes": [],
+                    "art": {
+                        "path": "MMD\\Screens\\Title\\Art\\Nemesis\\unk.nem",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "",
+                        "label": ""
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "14e92c73-0584-44ef-ae08-334e364492ee"
+                }
+            ],
+            "isDirectory": true,
+            "expanded": true,
+            "uuid": "2643a6ce-7b2f-485a-a853-1f2cd239d619"
+        }
+    ]
+}
