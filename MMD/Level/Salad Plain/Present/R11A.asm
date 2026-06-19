@@ -1176,7 +1176,7 @@ sub_200E0C:								; CODE XREF: sub_200E82↓p
 			lsr.w	#8,d1
 			andi.w	#$7F,d1
 			add.w	d1,d0
-			move.l	#unk_210000,d1
+			move.l	#chunkbuffer,d1
 			lea	(byte_FFA400).w,a1
 			move.b	(a1,d0.w),d1
 			beq.s	loc_200E4A
@@ -1223,7 +1223,7 @@ loc_200E66:								; CODE XREF: sub_200E0C+4C↑j
 sub_200E82:								; CODE XREF: sub_200A9E+86↑p
 										; sub_200A9E+B6↑p ...
 			bsr.w	sub_200E0C
-			cmpi.l	#unk_210000,d1
+			cmpi.l	#chunkbuffer,d1
 			beq.s	loc_200E9C
 			move.w	(a1),d0
 			move.w	d0,d4
@@ -1305,7 +1305,7 @@ loc_200F34:								; CODE XREF: sub_200E82+84↑j
 sub_200F42:								; CODE XREF: sub_200E82+1C↑p
 										; sub_200E82+B4↑p
 			bsr.w	sub_200E0C
-			cmpi.l	#unk_210000,d1
+			cmpi.l	#chunkbuffer,d1
 			beq.s	loc_200F5C
 			move.w	(a1),d0
 			move.w	d0,d4
@@ -1381,7 +1381,7 @@ loc_200FE2:								; CODE XREF: sub_200F42+94↑j
 sub_200FF2:								; CODE XREF: sub_200A9E+1B8↑p
 										; sub_200A9E+1E6↑p ...
 			bsr.w	sub_200E0C
-			cmpi.l	#unk_210000,d1
+			cmpi.l	#chunkbuffer,d1
 			beq.s	loc_20100C
 			move.w	(a1),d0
 			move.w	d0,d4
@@ -1455,7 +1455,7 @@ loc_201094:								; CODE XREF: sub_200FF2+84↑j
 sub_2010A2:								; CODE XREF: sub_200FF2+1C↑p
 										; sub_200FF2+A4↑p
 			bsr.w	sub_200E0C
-			cmpi.l	#unk_210000,d1
+			cmpi.l	#chunkbuffer,d1
 			beq.s	loc_2010BC
 			move.w	(a1),d0
 			move.w	d0,d4
@@ -2434,19 +2434,19 @@ STARTZ80BUS:							; CODE XREF: ROM:0020176E↑p
 z80snddriverload:
 			move.w	#$100,(z80reset).l
 			jsr	STOPZ80BUS(pc)
-			lea	($A00000).l,a1
+			lea	(z80ram).l,a1
 			lea	(unk_22EB40).l,a2
 			move.w	#(unk_22EB40_end-unk_22EB40)-1,d0
 loc_201E42:								; CODE XREF: ROM:00201E44↓j
 			move.b	(a2)+,(a1)+
 			dbf	d0,loc_201E42
-			lea	($A00B00).l,a1
+			lea	(z80ram+$B00).l,a1
 			lea	(unk_22E3E4).l,a2
 			move.w	#(unk_22E3E4_end-unk_22E3E4)-1,d0
 loc_201E58:								; CODE XREF: ROM:00201E5A↓j
 			move.b	(a2)+,(a1)+
 			dbf	d0,loc_201E58
-			lea	($A01900).l,a1
+			lea	(z80ram+$1900).l,a1
 			lea	(unk_22E3AC).l,a2
 			move.w	#(unk_22E3AC_end-unk_22E3AC)-1,d0
 loc_201E6E:								; CODE XREF: ROM:00201E70↓j
@@ -2464,27 +2464,27 @@ queuesound1:							; CODE XREF: sub_203D60+6E↓p
 ; =============== S U B R O U T I N E =======================================
 queuesound2:							; CODE XREF: ROM:002037FA↓j
 										; sub_20409A+268↓p ...
-			move.b	d0,(byte_FFF00B).w
+			move.b	d0,(soundram+SMPS_RAM.v_soundqueue1).w
 			rts
 ; End of function queuesound2
 ; ---------------------------------------------------------------------------
 queuesound3:
-			move.b	d0,(byte_FFF00C).w
+			move.b	d0,(soundram+SMPS_RAM.v_soundqueue2).w
 			rts
 ; =============== S U B R O U T I N E =======================================
 sub_201E98:								; CODE XREF: ROM:loc_2016A4↑p
 			jsr	(STOPZ80BUS).l
-			tst.b	(byte_FFF00B).w
+			tst.b	(soundram+SMPS_RAM.v_soundqueue1).w
 			beq.s	loc_201EB4
-			move.b	(byte_FFF00B).w,($A01C09).l
-			move.b	#0,(byte_FFF00B).w
+			move.b	(soundram+SMPS_RAM.v_soundqueue1).w,(z80ram+$1C09).l
+			move.b	#0,(soundram+SMPS_RAM.v_soundqueue1).w
 			bra.s	loc_201EC8
 ; ---------------------------------------------------------------------------
 loc_201EB4:								; CODE XREF: sub_201E98+A↑j
-			tst.b	(byte_FFF00C).w
+			tst.b	(soundram+SMPS_RAM.v_soundqueue2).w
 			beq.s	loc_201EC8
-			move.b	(byte_FFF00C).w,($A01C09).l
-			move.b	#0,(byte_FFF00C).w
+			move.b	(soundram+SMPS_RAM.v_soundqueue2).w,(z80ram+$1C09).l
+			move.b	#0,(soundram+SMPS_RAM.v_soundqueue2).w
 loc_201EC8:								; CODE XREF: sub_201E98+1A↑j
 										; sub_201E98+20↑j
 			jmp	(STARTZ80BUS).l
@@ -4133,7 +4133,7 @@ loc_202D50:								; CODE XREF: sub_202DD2+20↓p
 			lsr.w	#5,d0
 			andi.w	#$7F,d0
 			add.w	d3,d0
-			move.l	#unk_210000,d3
+			move.l	#chunkbuffer,d3
 			move.b	(a4,d0.w),d3
 			beq.s	locret_202D98
 			subq.b	#1,d3
@@ -4162,7 +4162,7 @@ locret_202D98:							; CODE XREF: sub_202D4C+26↑j
 			lsr.w	#5,d0
 			andi.w	#$7F,d0
 			add.w	d3,d0
-			move.l	#unk_210000,d3
+			move.l	#chunkbuffer,d3
 			move.b	(a4,d0.w),d3
 			subq.b	#1,d3
 			andi.w	#$7F,d3
@@ -4286,7 +4286,7 @@ sub_202EA6:								; CODE XREF: ROM:00201330↑p
 ; =============== S U B R O U T I N E =======================================
 sub_202ED0:								; CODE XREF: sub_202EA6+18↑p
 			moveq	#-16,d4
-			moveq	#$F,d6
+			moveq	#16-1,d6
 loc_202ED4:								; CODE XREF: sub_202ED0+22↓j
 			movem.l d4-d6,-(sp)
 			moveq	#0,d5
@@ -4305,7 +4305,7 @@ loc_202ED4:								; CODE XREF: sub_202ED0+22↓j
 ; START OF FUNCTION CHUNK FOR sub_202EA6
 loc_202EF8:								; CODE XREF: sub_202EA6+26↑j
 			moveq	#-16,d4
-			moveq	#$F,d6
+			moveq	#16-1,d6
 loc_202EFC:								; CODE XREF: sub_202EA6+7A↓j
 			movem.l d4-d6/a0,-(sp)
 			lea	(unk_202F26).l,a0
@@ -4394,7 +4394,7 @@ sub_202F90:								; CODE XREF: ROM:0020132C↑p
 			lea	(blkwk).w,a4
 			bsr.w	bitdevwkr
 			movea.l (a2)+,a0
-			lea	(unk_210000).l,a1
+			lea	(chunkbuffer).l,a1
 			bsr.w	unlze
 			bsr.w	layoutload
 			move.w	(a2)+,d0
@@ -4561,9 +4561,9 @@ loc_203110:								; CODE XREF: sub_2030F2+A↑j
 			rts
 ; End of function sub_2030F2
 ; ---------------------------------------------------------------------------
-			moveq	#$1F,d7
+			moveq	#(byte_FFD800-actwk)/obj-1,d7
 			bsr.s	loc_2030FA
-			moveq	#$5F,d7 ; '_'
+			moveq	#$1800/obj-1,d7
 loc_203120:								; CODE XREF: ROM:00203134↓j
 			moveq	#0,d0
 			move.b	(a0),d0
@@ -4661,7 +4661,7 @@ loc_203204:								; CODE XREF: displaysprite+E↑j
 			lsr.w	#1,d0
 			andi.w	#$380,d0
 			adda.w	d0,a1
-			cmpi.w	#$7E,(a1) ; '~'
+			cmpi.w	#$7E,(a1)
 			bcc.s	locret_203220
 			addq.w	#2,(a1)
 			adda.w	(a1),a1
@@ -4676,7 +4676,7 @@ locret_203220:							; CODE XREF: displaysprite+20↑j
 			lsr.w	#1,d0
 			andi.w	#$380,d0
 			adda.w	d0,a2
-			cmpi.w	#$7E,(a2) ; '~'
+			cmpi.w	#$7E,(a2)
 			bcc.s	locret_20323E
 			addq.w	#2,(a2)
 			adda.w	(a2),a2
@@ -5041,7 +5041,7 @@ loc_203580:								; CODE XREF: sub_203558+20↑j
 			cmpi.w	#$2A30,(a1)
 			bcs.s	locret_2035AE
 			move.w	#0,(a1)
-			move.b	#$2B,obj.ani(a0) ; '+'
+			move.b	#$2B,obj.ani(a0)
 			move.w	#-$500,obj.yvel(a0)
 			move.w	#$100,obj.xvel(a0)
 			btst	#0,obj.status(a0)
@@ -5216,7 +5216,7 @@ locret_203788:							; CODE XREF: sub_203720+2A↑j
 			bra.s	loc_2037BA
 ; ---------------------------------------------------------------------------
 loc_2037A8:								; CODE XREF: ROM:00203798↑j
-			cmpi.b	#$21,d1 ; '!'
+			cmpi.b	#$21,d1
 			bne.s	locret_203786
 			cmpi.w	#$2A0,d2
 			bcc.s	locret_203786
@@ -5251,7 +5251,7 @@ sub_203800:								; CODE XREF: sub_203720+22↑p
 			lsr.w	#8,d1
 			andi.w	#$7F,d1
 			add.w	d1,d0
-			move.l	#unk_210000,d1
+			move.l	#chunkbuffer,d1
 			lea	(byte_FFA400).w,a1
 			move.b	(a1,d0.w),d1
 			andi.b	#$7F,d1
@@ -21263,7 +21263,7 @@ word_20E27E:
 			incbin	"Leftovers/R11A__.MMD"
 			even
 
-unk_210000:
+chunkbuffer:
 			incbin	"Leftovers/Chunks.unc"
 			even
 
