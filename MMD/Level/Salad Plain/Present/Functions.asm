@@ -1,0 +1,1 @@
+zoneact	func	zone,act	{zone<<8+act}
