@@ -128,6 +128,24 @@ palid_levelsel:	equ	(pal_levelsel_ptr-pal_index)/8
 palid_player:	equ	(pal_player_ptr-pal_index)/8
 palid_spz:	equ	(pal_spz_ptr-pal_index)/8
 
+; Division Developer Equates
+ddevid_00:	equ (ddev_00_ptr-divdev_index)/2
+ddevid_01:	equ (ddev_01_ptr-divdev_index)/2
+ddevid_02:	equ (ddev_02_ptr-divdev_index)/2
+ddevid_03:	equ (ddev_03_ptr-divdev_index)/2
+ddevid_04:	equ (ddev_04_ptr-divdev_index)/2
+ddevid_05:	equ (ddev_05_ptr-divdev_index)/2
+ddevid_06:	equ (ddev_06_ptr-divdev_index)/2
+ddevid_07:	equ (ddev_07_ptr-divdev_index)/2
+ddevid_08:	equ (ddev_08_ptr-divdev_index)/2
+ddevid_09:	equ (ddev_09_ptr-divdev_index)/2
+ddevid_0A:	equ (ddev_0A_ptr-divdev_index)/2
+ddevid_0B:	equ (ddev_0B_ptr-divdev_index)/2
+ddevid_0C:	equ (ddev_0C_ptr-divdev_index)/2
+ddevid_0D:	equ (ddev_0D_ptr-divdev_index)/2
+ddevid_0E:	equ (ddev_0E_ptr-divdev_index)/2
+ddevid_0F:	equ (ddev_0F_ptr-divdev_index)/2
+
 ; Zone Equates
 zoneid_SPZ:	equ	0
 

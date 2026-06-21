@@ -2448,7 +2448,7 @@ loc_202022:
 ; =============== S U B R O U T I N E =======================================
 sub_20202E:
 			movem.l a1-a2,-(sp)
-			lea	(off_20E00A).l,a1
+			lea	(divdev_index).l,a1
 			add.w	d0,d0
 			move.w	(a1,d0.w),d0
 			lea	(a1,d0.w),a1
@@ -2473,7 +2473,7 @@ loc_20205A:
 ; ---------------------------------------------------------------------------
 loc_202060:
 			movem.l a1-a2,-(sp)
-			lea	(off_20E00A).l,a1
+			lea	(divdev_index).l,a1
 			add.w	d0,d0
 			move.w	(a1,d0.w),d0
 			lea	(a1,d0.w),a1
@@ -2588,7 +2588,7 @@ loc_202190:
 			rts
 ; End of function sub_20210C
 ; ---------------------------------------------------------------------------
-			lea	(off_20E00A).l,a1
+			lea	(divdev_index).l,a1
 			add.w	d0,d0
 			move.w	(a1,d0.w),d0
 			lea	(a1,d0.w),a1
@@ -4436,9 +4436,6 @@ locret_203220:							; CODE XREF: displaysprite+20↑j
 locret_20323E:							; CODE XREF: ROM:00203236↑j
 			rts
 ; ---------------------------------------------------------------------------
-; START OF FUNCTION CHUNK FOR obj13
-;	ADDITIONAL PARENT FUNCTION sub_203E16
-;	ADDITIONAL PARENT FUNCTION sub_2063B8
 deleteobj:								; CODE XREF: ROM:loc_20068E↑j
 										; sub_203E16+14↓j ...
 			movea.l a0,a1
@@ -4449,7 +4446,6 @@ loc_203246:								; CODE XREF: obj13-6912↓j
 			dbf	d0,loc_203246
 
 			rts
-; END OF FUNCTION CHUNK FOR obj13
 ; ---------------------------------------------------------------------------
 dword_20324E:	dc.l 0						; DATA XREF: sub_20325E+2A↓r
 			dc.l dword_FFF700&$FFFFFF
@@ -20306,7 +20302,6 @@ byte_20DB98:	dc.b 12						; DATA XREF: ROM:0020DB56↑o
 			dc.b   0,  5,  8,$35,$20
 			even
 ; ---------------------------------------------------------------------------
-; START OF FUNCTION CHUNK FOR sub_202F90
 loc_20DBD6:								; CODE XREF: sub_202F90+40↑j
 			lea	word_20DC28(pc),a1
 			moveq	#0,d0
@@ -20322,10 +20317,9 @@ loc_20DBEA:								; CODE XREF: sub_202F90+AC54↑j
 			move.b	d1,(word_FF12F4).l
 			move.w	word_20DC40(pc,d1.w),d0
 			jmp	(sub_20202E).l
-; END OF FUNCTION CHUNK FOR sub_202F90
+
 ; =============== S U B R O U T I N E =======================================
 sub_20DBFA:								; CODE XREF: ROM:loc_20146A↑p
-; FUNCTION CHUNK AT 00202060 SIZE 0000002C BYTES
 			lea	word_20DC28(pc),a1
 			moveq	#0,d0
 			moveq	#0,d1
@@ -20347,25 +20341,30 @@ loc_20DC18:								; CODE XREF: sub_20DBFA+1A↑j
 			jmp	(loc_202060).l
 ; End of function sub_20DBFA
 ; ---------------------------------------------------------------------------
-word_20DC28:	dc.w $D00					; DATA XREF: sub_202F90:loc_20DBD6↑o
-										; sub_20DBFA↑o
+word_20DC28:
+			dc.w $D00
 			dc.w $1100
 			dc.w $1500
 			dc.w $1A00
 			dc.w $2000
 			dc.w $FFFF
-word_20DC34:	dc.w 4						; DATA XREF: sub_20DBFA+24↑r
-			dc.w 5
-			dc.w 6
-			dc.w 7
-			dc.w 8
-			dc.w 9
-word_20DC40:	dc.w $A						; DATA XREF: sub_202F90+AC60↑r
-			dc.w $B
-			dc.w $C
-			dc.w $D
-			dc.w $E
-			dc.w $F
+
+word_20DC34:
+			dc.w ddevid_04
+			dc.w ddevid_05
+			dc.w ddevid_06
+			dc.w ddevid_07
+			dc.w ddevid_08
+			dc.w ddevid_09
+
+word_20DC40:
+			dc.w ddevid_0A
+			dc.w ddevid_0B
+			dc.w ddevid_0C
+			dc.w ddevid_0D
+			dc.w ddevid_0E
+			dc.w ddevid_0F
+
 ; =============== S U B R O U T I N E =======================================
 sub_20DC4C:								; CODE XREF: ROM:002057A8↑p
 										; ROM:00205846↑p ...
@@ -20619,24 +20618,16 @@ unk_20DFCA:
 			dc.b   4
 			dc.b $FF
 			even
+
 obj17_map:
-			dc.w byte_20DFD4-obj17_map
-byte_20DFD4:
-			dc.b 6
-			dc.b $D8, $B,  0,  0,$E8
-			dc.b $D8, $B,  0, $C,  0
-			dc.b $F4,  2,  0,$18,$F8
-			dc.b   4,  0,  0,$1B,$F0
-			dc.b $F4,  2,  8,$18,  0
-			dc.b   4,  0,  8,$1B,  8
-			even
+			include	"Mappings/Signpost.asm"
 
 sub_20DFF4:
 			jmp	(sub_2059B8).l
 ; ---------------------------------------------------------------------------
 lvlheader:
-			dc.l 3<<24+spz_8x8
-			dc.l 2<<24+spz_16x16
+			dc.l ddevid_03<<24+spz_8x8
+			dc.l ddevid_02<<24+spz_16x16
 			dc.l spz_256x256
 			dc.b 0
 			dc.b musid_GHZ
@@ -20644,28 +20635,33 @@ lvlheader:
 			dc.b palid_spz
 			even
 
-off_20E00A:
-			dc.w word_20E02A-off_20E00A
-			dc.w word_20E032-off_20E00A
-			dc.w word_20E088-off_20E00A
-			dc.w word_20E02A-off_20E00A
-			dc.w word_20E0B4-off_20E00A
-			dc.w word_20E0C2-off_20E00A
-			dc.w word_20E0DC-off_20E00A
-			dc.w word_20E0EA-off_20E00A
-			dc.w word_20E0F8-off_20E00A
-			dc.w word_20E11E-off_20E00A
-			dc.w word_20E126-off_20E00A
-			dc.w word_20E182-off_20E00A
-			dc.w word_20E1D8-off_20E00A
-			dc.w word_20E1D8-off_20E00A
-			dc.w word_20E228-off_20E00A
-			dc.w word_20E27E-off_20E00A
-word_20E02A:
+ddev_ptr	macro
+\1_ptr:	dc.w \1-divdev_index
+	endm
+
+divdev_index:
+			ddev_ptr ddev_00
+			ddev_ptr ddev_01
+			ddev_ptr ddev_02
+			ddev_ptr ddev_03
+			ddev_ptr ddev_04
+			ddev_ptr ddev_05
+			ddev_ptr ddev_06
+			ddev_ptr ddev_07
+			ddev_ptr ddev_08
+			ddev_ptr ddev_09
+			ddev_ptr ddev_0A
+			ddev_ptr ddev_0B
+			ddev_ptr ddev_0C
+			ddev_ptr ddev_0D
+			ddev_ptr ddev_0E
+			ddev_ptr ddev_0F
+ddev_00:
+ddev_03:
 			dc.w 1-1
 			dc.l spz_8x8
 			dc.w 0
-word_20E032:
+ddev_01:
 			dc.w 14-1
 			dc.l cg_rock
 			dc.w $64C0
@@ -20695,7 +20691,7 @@ word_20E032:
 			dc.w $DAC0
 			dc.l cg_ring
 			dc.w $F5C0
-word_20E088:
+ddev_02:
 			dc.w 7-1
 			dc.l cg_bridge
 			dc.w $63C0
@@ -20711,13 +20707,13 @@ word_20E088:
 			dc.w $8EA0
 			dc.l unk_232CCC
 			dc.w $9B80
-word_20E0B4:
+ddev_04:
 			dc.w 2-1
 			dc.l unk_2328B2
 			dc.w $7CE0
 			dc.l unk_2331BE
 			dc.w $8620
-word_20E0C2:
+ddev_05:
 			dc.w 4-1
 			dc.l cg_bridge
 			dc.w $63C0
@@ -20727,19 +20723,19 @@ word_20E0C2:
 			dc.w $8BE0
 			dc.l unk_232604
 			dc.w $8EA0
-word_20E0DC:
+ddev_06:
 			dc.w 2-1
 			dc.l unk_23227E
 			dc.w $8440
 			dc.l unk_233AA4
 			dc.w $92A0
-word_20E0EA:
+ddev_07:
 			dc.w 2-1
 			dc.l unk_233512
 			dc.w $7CE0
 			dc.l unk_23227E
 			dc.w $8440
-word_20E0F8:
+ddev_08:
 			dc.w 6-1
 			dc.l cg_bridge
 			dc.w $63C0
@@ -20753,11 +20749,11 @@ word_20E0F8:
 			dc.w $8BE0
 			dc.l cg_signpost
 			dc.w $A060
-word_20E11E:
+ddev_09:
 			dc.w 1-1
 			dc.l cg_signpost
 			dc.w $A060
-word_20E126:
+ddev_0A:
 			dc.w 15-1
 			dc.l cg_bridge
 			dc.w $63C0
@@ -20789,7 +20785,7 @@ word_20E126:
 			dc.w $8EA0
 			dc.l unk_232CCC
 			dc.w $9B80
-word_20E182:
+ddev_0B:
 			dc.w 14-1
 			dc.l cg_bridge
 			dc.w $63C0
@@ -20819,7 +20815,8 @@ word_20E182:
 			dc.w $8EA0
 			dc.l unk_232CCC
 			dc.w $9B80
-word_20E1D8:
+ddev_0C:
+ddev_0D:
 			dc.w 13-1
 			dc.l cg_rock
 			dc.w $64C0
@@ -20847,7 +20844,7 @@ word_20E1D8:
 			dc.w $92A0
 			dc.l unk_232CCC
 			dc.w $9B80
-word_20E228:
+ddev_0E:
 			dc.w 14-1
 			dc.l cg_bridge
 			dc.w $63C0
@@ -20877,7 +20874,7 @@ word_20E228:
 			dc.w $8BE0
 			dc.l unk_232CCC
 			dc.w $9B80
-word_20E27E:
+ddev_0F:
 			dc.w 14-1
 			dc.l cg_bridge
 			dc.w $63C0
