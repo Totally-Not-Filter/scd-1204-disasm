@@ -103,6 +103,31 @@ field_3E:	ds.b 1
 field_3F:	ds.b 1
 			ends
 
+; Game Mode Equates
+gmmodeid_lvl:	equ	level_ptr-gamemode_index
+
+; Vertical Interrupts Equates
+vintid_00:	equ vint00_ptr-vint_index
+vintid_02:	equ vint02_ptr-vint_index
+vintid_04:	equ vint04_ptr-vint_index
+vintid_06:	equ vint06_ptr-vint_index
+vintid_08:	equ vint08_ptr-vint_index
+vintid_0A:	equ vint0A_ptr-vint_index
+vintid_0C:	equ vint0C_ptr-vint_index
+vintid_0E:	equ vint0E_ptr-vint_index
+vintid_10:	equ vint10_ptr-vint_index
+vintid_12:	equ vint12_ptr-vint_index
+vintid_14:	equ vint14_ptr-vint_index
+vintid_16:	equ vint16_ptr-vint_index
+vintid_18:	equ vint18_ptr-vint_index
+
+; Palette Equates
+palid_segabg:	equ	(pal_segabg_ptr-pal_index)/8
+palid_title:	equ	(pal_title_ptr-pal_index)/8
+palid_levelsel:	equ	(pal_levelsel_ptr-pal_index)/8
+palid_player:	equ	(pal_player_ptr-pal_index)/8
+palid_spz:	equ	(pal_spz_ptr-pal_index)/8
+
 ; Zone Equates
 zoneid_SPZ:	equ	0
 
@@ -113,10 +138,17 @@ actid_3:	equ	2
 actid_4:	equ	3
 
 ; Sonic The Hedgehog (Mega Drive) Leftover Equates
+
+; Game Mode Equates
+gmmodeid_lvl_S1:	equ	$C
+gmmodeid_ss:		equ	$10
+
+; Zone Equates
 zoneid_LZ:	equ	1
 zoneid_MZ:	equ	2
 zoneid_SLZ:	equ	3
 
+; Music ID Equates
 musid_GHZ:	equ	$81
 musid_LZ:	equ	$82
 musid_MZ:	equ	$83

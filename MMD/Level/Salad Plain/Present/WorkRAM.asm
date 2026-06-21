@@ -9,8 +9,9 @@
 byte_FF0580:	rs.b 1
 byte_FF0580_ext:	equ	byte_FF0580+$FF<<24
 			rs.b $A7F
-unk_FF1000: rs.b 1
-			rs.b $201
+unk_FF1000: rs.b $200
+unk_FF1000_end:	rs.b 0
+			rs.b 2
 word_FF1202:	rs.w 1
 word_FF1204:	rs.w 1
 byte_FF1206:	rs.b 1
@@ -136,8 +137,8 @@ byte_FF1900_end:	rs.b 0
 
 	rsset	$FFFF8000
 			rs.b $2400
-byte_FFA400:	rs.b $400
-byte_FFA400_end:	rs.b 0
+lvllayoutbuffer:	rs.b $400
+lvllayoutbuffer_end:	rs.b 0
 byte_FFA800:	rs.b $200
 bitdevwk:	rs.b $200
 byte_FFAC00:	rs.b $400
