@@ -53,7 +53,7 @@ locret_20DF6E:
 loc_20DF70:
 			subq.b	#1,obj.field_2A(a0)
 			bne.s	locret_20DFC6
-			move.w	#2,(word_FF1202).l
+			move.w	#2,(lvl_reset).l
 			move.b	#0,(byte_FF1230).l
 			clr.w	(word_FF12F4).l
 			clr.l	(dword_FF1880).l

@@ -10,6 +10,14 @@ z80ram:		equ	$A00000
 z80busreq:	equ	$A11100
 z80reset:	equ	$A11200
 
+version:	EQU	$A10001
+port_1:		EQU	$A10003
+port_2:		EQU	$A10005
+port_3:		EQU	$A10007
+cont_1:		EQU	$A10009
+cont_2:		EQU	$A1000B
+cont_3:		EQU	$A1000D
+
 ; VDP Equates
 vdpdata:	equ	$C00000
 vdpctrl:	equ	$C00004
@@ -57,8 +65,7 @@ obj.scrypos:	equ obj.xpos+2
 ypos:		ds.l 1
 xvel:		ds.w 1
 yvel:		ds.w 1
-inertia:	ds.b 1
-field_15:	ds.b 1
+inertia:	ds.w 1
 field_16:	ds.b 1
 field_17:	ds.b 1
 priority:	ds.b 1
@@ -103,6 +110,9 @@ field_3E:	ds.b 1
 field_3F:	ds.b 1
 			ends
 
+; Chunk Equates
+chunksize:	equ	(16*2)*16	; (width*2) * height
+
 ; Game Mode Equates
 gmmodeid_lvl:	equ	level_ptr-gamemode_index
 
@@ -120,6 +130,43 @@ vintid_12:	equ vint12_ptr-vint_index
 vintid_14:	equ vint14_ptr-vint_index
 vintid_16:	equ vint16_ptr-vint_index
 vintid_18:	equ vint18_ptr-vint_index
+
+; Object Equates
+objid_00:	equ	0
+objid_01:	equ	(obj01_ptr-off_2034AE+4)/4
+objid_02:	equ	(obj02_ptr-off_2034AE+4)/4
+objid_03:	equ	(obj03_ptr-off_2034AE+4)/4
+objid_04:	equ	(obj04_ptr-off_2034AE+4)/4
+objid_05:	equ	(obj05_ptr-off_2034AE+4)/4
+objid_06:	equ	(obj06_ptr-off_2034AE+4)/4
+objid_07:	equ	(obj07_ptr-off_2034AE+4)/4
+objid_08:	equ	(obj08_ptr-off_2034AE+4)/4
+objid_09:	equ	(obj09_ptr-off_2034AE+4)/4
+objid_0A:	equ	(obj0A_ptr-off_2034AE+4)/4
+objid_0B:	equ	(obj0B_ptr-off_2034AE+4)/4
+objid_0C:	equ	(obj0C_ptr-off_2034AE+4)/4
+objid_0D:	equ	(obj0D_ptr-off_2034AE+4)/4
+objid_0E:	equ	(obj0E_ptr-off_2034AE+4)/4
+objid_0F:	equ	(obj0F_ptr-off_2034AE+4)/4
+objid_10:	equ	(obj10_ptr-off_2034AE+4)/4
+objid_11:	equ	(obj11_ptr-off_2034AE+4)/4
+objid_12:	equ	(obj12_ptr-off_2034AE+4)/4
+objid_13:	equ	(obj13_ptr-off_2034AE+4)/4
+objid_14:	equ	(obj14_ptr-off_2034AE+4)/4
+objid_15:	equ	(obj15_ptr-off_2034AE+4)/4
+objid_16:	equ	(obj16_ptr-off_2034AE+4)/4
+objid_17:	equ	(obj17_ptr-off_2034AE+4)/4
+objid_18:	equ	(obj18_ptr-off_2034AE+4)/4
+objid_19:	equ	(obj19_ptr-off_2034AE+4)/4
+objid_1A:	equ	(obj1A_ptr-off_2034AE+4)/4
+objid_1B:	equ	(obj1B_ptr-off_2034AE+4)/4
+objid_1C:	equ	(obj1C_ptr-off_2034AE+4)/4
+objid_1D:	equ	(obj1D_ptr-off_2034AE+4)/4
+objid_1E:	equ	(obj1E_ptr-off_2034AE+4)/4
+objid_1F:	equ	(obj1F_ptr-off_2034AE+4)/4
+objid_23:	equ	$23
+objid_25:	equ	$25
+objid_29:	equ	$29
 
 ; Palette Equates
 palid_segabg:	equ	(pal_segabg_ptr-pal_index)/8

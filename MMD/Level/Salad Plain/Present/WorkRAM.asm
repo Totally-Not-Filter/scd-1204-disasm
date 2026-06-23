@@ -9,10 +9,10 @@
 byte_FF0580:	rs.b 1
 byte_FF0580_ext:	equ	byte_FF0580+$FF<<24
 			rs.b $A7F
-unk_FF1000: rs.b $200
-unk_FF1000_end:	rs.b 0
+stackwk:	rs.b $200
+stackwk_end:	rs.b 0
 			rs.b 2
-word_FF1202:	rs.w 1
+lvl_reset:	rs.w 1
 word_FF1204:	rs.w 1
 byte_FF1206:	rs.b 1
 			rs.b 1
@@ -89,8 +89,8 @@ byte_FF127B:	rs.b 1
 			rs.b $44
 byte_FF12C0:	rs.b 1
 byte_FF12C1:	rs.b 1
-byte_FF12C2:	rs.b 1
-byte_FF12C3:	rs.b 1
+ring_time:	rs.b 1
+ring_frame:	rs.b 1
 byte_FF12C4:	rs.b 1
 byte_FF12C5:	rs.b 1
 byte_FF12C6:	rs.b 1
@@ -117,10 +117,10 @@ word_FF13F0:	rs.w 1
 			rs.b 2
 word_FF13F4:	rs.w 1
 			rs.b 2
-byte_FF13F8:	rs.b 1
+mdstatus:	rs.b 1
 			rs.b 1
 word_FF13FA:	rs.w 1
-dword_FF13FC:	rs.l 1
+init_f:	rs.l 1
 unk_FF1400: rs.b $180
 unk_FF1400_end:	rs.b 0
 byte_FF1580:	rs.b $300
@@ -137,16 +137,16 @@ byte_FF1900_end:	rs.b 0
 
 	rsset	$FFFF8000
 			rs.b $2400
-lvllayoutbuffer:	rs.b $400
-lvllayoutbuffer_end:	rs.b 0
+lvllayoutwk:	rs.b $400
+lvllayoutwk_end:	rs.b 0
 byte_FFA800:	rs.b $200
 bitdevwk:	rs.b $200
-byte_FFAC00:	rs.b $400
+spr_list:	rs.b $400
 blkwk:		rs.b $1800
-byte_FFC800:	rs.b $300
-byte_FFCB00:	rs.b $100
-byte_FFCC00:	rs.b $400
-byte_FFCC00_end:	rs.b 0
+playwrtwk:	rs.b $300
+playposiwk:	rs.b $100
+hscrollwk:	rs.b $400
+hscrollwk_end:	rs.b 0
 actwk:		rs.b obj
 byte_FFD040:	rs.b obj
 byte_FFD080:	rs.b obj
@@ -178,7 +178,7 @@ word_FFF606:	rs.w 1
 			rs.b 4
 word_FFF60C:	rs.w 1
 			rs.b 6
-word_FFF614:	rs.w 1
+generictimer:	rs.w 1
 dword_FFF616:	rs.l 1
 dword_FFF61A:	rs.l 1
 			rs.b 6
@@ -263,7 +263,7 @@ word_FFF758:	rs.w 1
 word_FFF75A:	rs.w 1
 byte_FFF75C:	rs.b 1
 byte_FFF75D:	rs.b 1
-miniplay_flag:	rs.b 1
+chibi_flag:	rs.b 1
 byte_FFF75F:	rs.b 1
 word_FFF760:	rs.w 1
 word_FFF762:	rs.w 1
