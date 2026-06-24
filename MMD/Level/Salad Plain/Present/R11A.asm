@@ -6719,7 +6719,8 @@ play_ani:
 			dc.w unk_205310-play_ani
 			dc.w unk_205318-play_ani
 			dc.w unk_205320-play_ani
-unk_2051D6: dc.b $FF
+unk_2051D6:
+			dc.b $FF
 			dc.b $35
 			dc.b $36
 			dc.b $37
@@ -6728,7 +6729,8 @@ unk_2051D6: dc.b $FF
 			dc.b $34
 			dc.b $FF
 			even
-unk_2051DE: dc.b $FF
+unk_2051DE:
+			dc.b $FF
 			dc.b $4B
 			dc.b $4C
 			dc.b $4D
@@ -6737,7 +6739,8 @@ unk_2051DE: dc.b $FF
 			dc.b $FF
 			dc.b $FF
 			even
-unk_2051E6: dc.b $FE
+unk_2051E6:
+			dc.b $FE
 			dc.b $2D
 			dc.b $2E
 			dc.b $2F
@@ -6746,7 +6749,8 @@ unk_2051E6: dc.b $FE
 			dc.b $FF
 			dc.b $FF
 			even
-unk_2051EE: dc.b $FE
+unk_2051EE:
+			dc.b $FE
 			dc.b $2D
 			dc.b $2E
 			dc.b $31
@@ -6755,7 +6759,8 @@ unk_2051EE: dc.b $FE
 			dc.b $31
 			dc.b $FF
 			even
-unk_2051F6: dc.b $FD
+unk_2051F6:
+			dc.b $FD
 			dc.b $64
 			dc.b $65
 			dc.b $66
@@ -6764,7 +6769,8 @@ unk_2051F6: dc.b $FD
 			dc.b $FF
 			dc.b $FF
 			even
-unk_2051FE: dc.b $17
+unk_2051FE:
+			dc.b $17
 			dc.b   1
 			dc.b   1
 			dc.b   1
@@ -6786,46 +6792,56 @@ unk_2051FE: dc.b $17
 			dc.b $FE
 			dc.b   2
 			even
-unk_205214: dc.b $1F
+unk_205214:
+			dc.b $1F
 			dc.b $6D
 			dc.b $6E
 			dc.b $FF
 			even
-unk_205218: dc.b $3F
+unk_205218:
+			dc.b $3F
 			dc.b   5
 			dc.b $FF
 			even
-unk_20521C: dc.b $3F
+unk_20521C:
+			dc.b $3F
 			dc.b $60
 			dc.b $FF
 			even
-unk_205220: dc.b $3F
+unk_205220:
+			dc.b $3F
 			dc.b $33
 			dc.b $FF
 			even
-unk_205224: dc.b $3F
+unk_205224:
+			dc.b $3F
 			dc.b $34
 			dc.b $FF
 			even
-unk_205228: dc.b $3F
+unk_205228:
+			dc.b $3F
 			dc.b $35
 			dc.b $FF
 			even
-unk_20522C: dc.b $3F
+unk_20522C:
+			dc.b $3F
 			dc.b $36
 			dc.b $FF
 			even
-unk_205230: dc.b   7
+unk_205230:
+			dc.b   7
 			dc.b $5B
 			dc.b $5C
 			dc.b $FF
 			even
-unk_205234: dc.b   7
+unk_205234:
+			dc.b   7
 			dc.b $3C
 			dc.b $3F
 			dc.b $FF
 			even
-unk_205238: dc.b   7
+unk_205238:
+			dc.b   7
 			dc.b $3C
 			dc.b $3D
 			dc.b $53
@@ -6833,34 +6849,40 @@ unk_205238: dc.b   7
 			dc.b $54
 			dc.b $FF
 			even
-unk_205240: dc.b $2F
+unk_205240:
+			dc.b $2F
 			dc.b $32
 			dc.b $FD
 			dc.b   0
 			even
-unk_205244: dc.b   4
+unk_205244:
+			dc.b   4
 			dc.b $6B
 			dc.b $6C
 			dc.b $FF
 			even
-unk_205248: dc.b  $F
+unk_205248:
+			dc.b  $F
 			dc.b $43
 			dc.b $43
 			dc.b $43
 			dc.b $FE
 			dc.b   1
 			even
-unk_20524E: dc.b  $F
+unk_20524E:
+			dc.b  $F
 			dc.b $43
 			dc.b $44
 			dc.b $FE
 			dc.b   1
 			even
-unk_205254: dc.b $3F
+unk_205254:
+			dc.b $3F
 			dc.b $49
 			dc.b $FF
 			even
-unk_205258: dc.b  $B
+unk_205258:
+			dc.b  $B
 			dc.b $5F
 			dc.b $5F
 			dc.b $37
@@ -6868,19 +6890,23 @@ unk_205258: dc.b  $B
 			dc.b $FD
 			dc.b   0
 			even
-unk_205260: dc.b $20
+unk_205260:
+			dc.b $20
 			dc.b $68
 			dc.b $FF
 			even
-unk_205264: dc.b $2F
+unk_205264:
+			dc.b $2F
 			dc.b $69
 			dc.b $FF
 			even
-unk_205268: dc.b   3
+unk_205268:
+			dc.b   3
 			dc.b $6A
 			dc.b $FF
 			even
-unk_20526C: dc.b   3
+unk_20526C:
+			dc.b   3
 			dc.b $4E
 			dc.b $4F
 			dc.b $50
@@ -6890,20 +6916,25 @@ unk_20526C: dc.b   3
 			dc.b $FE
 			dc.b   1
 			even
-unk_205276: dc.b   3
+unk_205276:
+			dc.b   3
 			dc.b $5D
 			dc.b $FF
 			even
-unk_20527A: dc.b   7
+unk_20527A:
+			dc.b   7
 			dc.b $5D
 			dc.b $5E
 			dc.b $FF
-unk_20527E: dc.b $77
+			even
+unk_20527E:
+			dc.b $77
 			dc.b   0
 			dc.b $FD
 			dc.b   0
 			even
-unk_205282: dc.b   3
+unk_205282:
+			dc.b   3
 			dc.b $3C
 			dc.b $3D
 			dc.b $53
@@ -6911,12 +6942,14 @@ unk_205282: dc.b   3
 			dc.b $54
 			dc.b $FF
 			even
-unk_20528A: dc.b   3
+unk_20528A:
+			dc.b   3
 			dc.b $3C
 			dc.b $FD
 			dc.b   0
 			even
-unk_20528E: dc.b $17
+unk_20528E:
+			dc.b $17
 			dc.b $6F
 			dc.b $6F
 			dc.b $6F
@@ -6938,46 +6971,54 @@ unk_20528E: dc.b $17
 			dc.b $FE
 			dc.b   2
 			even
-unk_2052A4: dc.b $3F
+unk_2052A4:
+			dc.b $3F
 			dc.b $72
 			dc.b $FF
 			even
-unk_2052A8: dc.b $FF
+unk_2052A8:
+			dc.b $FF
 			dc.b $73
 			dc.b $74
 			dc.b $75
 			dc.b $74
 			dc.b $FF
 			even
-unk_2052AE: dc.b $FF
+unk_2052AE:
+			dc.b $FF
 			dc.b $76
 			dc.b $77
 			dc.b $FF
 			dc.b $FF
 			dc.b $FF
 			even
-unk_2052B4: dc.b $FE
+unk_2052B4:
+			dc.b $FE
 			dc.b $7C
 			dc.b $7D
 			dc.b $7E
 			dc.b $FF
 			dc.b $FF
 			even
-unk_2052BA: dc.b   7
+unk_2052BA:
+			dc.b   7
 			dc.b $78
 			dc.b $78
 			dc.b $FF
 			even
-unk_2052BE: dc.b   3
+unk_2052BE:
+			dc.b   3
 			dc.b $79
 			dc.b $FF
 			even
-unk_2052C2: dc.b $1F
+unk_2052C2:
+			dc.b $1F
 			dc.b $7A
 			dc.b $7B
 			dc.b $FF
 			even
-unk_2052C6: dc.b $FD
+unk_2052C6:
+			dc.b $FD
 			dc.b $73
 			dc.b $74
 			dc.b $75
@@ -6985,15 +7026,18 @@ unk_2052C6: dc.b $FD
 			dc.b $FF
 			dc.b $FF
 			even
-unk_2052CE: dc.b $3F
+unk_2052CE:
+			dc.b $3F
 			dc.b $6F
 			dc.b $FF
 			even
-unk_2052D2: dc.b $3F
+unk_2052D2:
+			dc.b $3F
 			dc.b   6
 			dc.b $FF
 			even
-unk_2052D6: dc.b   3
+unk_2052D6:
+			dc.b   3
 			dc.b   7
 			dc.b   7
 			dc.b   7
@@ -7010,7 +7054,8 @@ unk_2052D6: dc.b   3
 			dc.b $FD
 			dc.b   5
 			even
-unk_2052E6: dc.b   9
+unk_2052E6:
+			dc.b   9
 			dc.b $11
 			dc.b $11
 			dc.b $11
@@ -7048,12 +7093,14 @@ unk_2052E6: dc.b   9
 			dc.b $FE
 			dc.b   1
 			even
-unk_20530C: dc.b   4
+unk_20530C:
+			dc.b   4
 			dc.b $18
 			dc.b $19
 			dc.b $FF
 			even
-unk_205310: dc.b $FC
+unk_205310:
+			dc.b $FC
 			dc.b $1A
 			dc.b $1B
 			dc.b $1C
@@ -7062,7 +7109,8 @@ unk_205310: dc.b $FC
 			dc.b $1E
 			dc.b $FF
 			even
-unk_205318: dc.b $FF
+unk_205318:
+			dc.b $FF
 			dc.b  $D
 			dc.b  $E
 			dc.b  $F
@@ -7071,13 +7119,15 @@ unk_205318: dc.b $FF
 			dc.b  $C
 			dc.b $FF
 			even
-unk_205320: dc.b $FF
+unk_205320:
+			dc.b $FF
 			dc.b $61
 			dc.b $62
 			dc.b $63
 			dc.b $FF
 			even
-unk_205326: dc.b $13
+unk_205326:
+			dc.b $13
 			dc.b $70
 			dc.b $6F
 			dc.b $70
@@ -7686,6 +7736,7 @@ off_205A08:
 			dc.l cg_shield
 			dc.l cg_stars
 			dc.l cg_timetravel
+
 obj06_ani:
 			dc.w unk_205A26-obj06_ani
 			dc.w unk_205A2E-obj06_ani
@@ -7696,7 +7747,8 @@ obj06_ani:
 			dc.w unk_205A8E-obj06_ani
 			dc.w unk_205AC8-obj06_ani
 			dc.w unk_205B02-obj06_ani
-unk_205A26: dc.b   1
+unk_205A26:
+			dc.b   1
 			dc.b   1
 			dc.b   0
 			dc.b   2
@@ -7705,14 +7757,16 @@ unk_205A26: dc.b   1
 			dc.b   0
 			dc.b $FF
 			even
-unk_205A2E: dc.b   5
+unk_205A2E:
+			dc.b   5
 			dc.b   4
 			dc.b   5
 			dc.b   6
 			dc.b   7
 			dc.b $FF
 			even
-unk_205A34: dc.b   0
+unk_205A34:
+			dc.b   0
 			dc.b   4
 			dc.b   4
 			dc.b   0
@@ -7739,61 +7793,64 @@ unk_205A34: dc.b   0
 			dc.b   0
 			dc.b $FF
 			even
-unk_205A4E: dc.b   0
-			dc.b   4
-			dc.b   4
+unk_205A4E:
 			dc.b   0
 			dc.b   4
-			dc.b   0
-			dc.b   0
-			dc.b   5
-			dc.b   5
-			dc.b   0
-			dc.b   5
-			dc.b   0
-			dc.b   0
-			dc.b   6
-			dc.b   6
-			dc.b   0
-			dc.b   6
-			dc.b   0
-			dc.b   0
-			dc.b   7
-			dc.b   7
-			dc.b   0
-			dc.b   7
-			dc.b   0
-			dc.b   0
-			dc.b $FF
-			even
-unk_205A68: dc.b   0
 			dc.b   4
-			dc.b   0
 			dc.b   0
 			dc.b   4
 			dc.b   0
 			dc.b   0
 			dc.b   5
-			dc.b   0
+			dc.b   5
 			dc.b   0
 			dc.b   5
 			dc.b   0
 			dc.b   0
 			dc.b   6
-			dc.b   0
+			dc.b   6
 			dc.b   0
 			dc.b   6
 			dc.b   0
 			dc.b   0
 			dc.b   7
-			dc.b   0
+			dc.b   7
 			dc.b   0
 			dc.b   7
 			dc.b   0
 			dc.b   0
 			dc.b $FF
 			even
-unk_205A82: dc.b   0
+unk_205A68:
+			dc.b   0
+			dc.b   4
+			dc.b   0
+			dc.b   0
+			dc.b   4
+			dc.b   0
+			dc.b   0
+			dc.b   5
+			dc.b   0
+			dc.b   0
+			dc.b   5
+			dc.b   0
+			dc.b   0
+			dc.b   6
+			dc.b   0
+			dc.b   0
+			dc.b   6
+			dc.b   0
+			dc.b   0
+			dc.b   7
+			dc.b   0
+			dc.b   0
+			dc.b   7
+			dc.b   0
+			dc.b   0
+			dc.b $FF
+			even
+unk_205A82:
+			dc.b   0
 			dc.b   8
 			dc.b   9
 			dc.b  $A
@@ -7806,7 +7863,8 @@ unk_205A82: dc.b   0
 			dc.b   0
 			dc.b $FF
 			even
-unk_205A8E: dc.b   0
+unk_205A8E:
+			dc.b   0
 			dc.b   8
 			dc.b   8
 			dc.b   0
@@ -7864,7 +7922,8 @@ unk_205A8E: dc.b   0
 			dc.b   0
 			dc.b $FF
 			even
-unk_205AC8: dc.b   0
+unk_205AC8:
+			dc.b   0
 			dc.b   8
 			dc.b   8
 			dc.b   0
@@ -7922,7 +7981,8 @@ unk_205AC8: dc.b   0
 			dc.b   0
 			dc.b $FF
 			even
-unk_205B02: dc.b   0
+unk_205B02:
+			dc.b   0
 			dc.b   8
 			dc.b   0
 			dc.b   0
@@ -7995,67 +8055,79 @@ obj06_map:
 			dc.w byte_205C16-obj06_map
 			dc.w byte_205C2C-obj06_map
 			dc.w byte_205C42-obj06_map
-byte_205B56:	dc.b 4
+byte_205B56:
+			dc.b 4
 			dc.b $E8, $A,  0,  0,$E8
 			dc.b $E8, $A,  0,  9,  0
 			dc.b   0, $A,$10,  0,$E8
 			dc.b   0, $A,$10,  9,  0
-byte_205B6B:	dc.b 4
+byte_205B6B:
+			dc.b 4
 			dc.b $E8, $A,  0,$12,$E8
 			dc.b $E8, $A,  0,$1B,  0
 			dc.b   0, $A,$10,$12,$E8
 			dc.b   0, $A,$10,$1B,  0
-byte_205B80:	dc.b 4
+byte_205B80:
+			dc.b 4
 			dc.b $E8, $A,  8,  9,$E8
 			dc.b $E8, $A,  8,  0,  0
 			dc.b   0, $A,$18,  9,$E8
 			dc.b   0, $A,$18,  0,  0
-byte_205B95:	dc.b 4
+byte_205B95:
+			dc.b 4
 			dc.b $E8, $A,  0,  0,$E8
 			dc.b $E8, $A,  0,  9,  0
 			dc.b   0, $A,$18,  9,$E8
 			dc.b   0, $A,$18,  0,  0
-byte_205BAA:	dc.b 4
+byte_205BAA:
+			dc.b 4
 			dc.b $E8, $A,  8,  9,$E8
 			dc.b $E8, $A,  8,  0,  0
 			dc.b   0, $A,$10,  0,$E8
 			dc.b   0, $A,$10,  9,  0
-byte_205BBF:	dc.b 4
+byte_205BBF:
+			dc.b 4
 			dc.b $E8, $A,  0,$12,$E8
 			dc.b $E8, $A,  0,$1B,  0
 			dc.b   0, $A,$18,$1B,$E8
 			dc.b   0, $A,$18,$12,  0
-byte_205BD4:	dc.b 4
+byte_205BD4:
+			dc.b 4
 			dc.b $E8, $A,  8,$1B,$E8
 			dc.b $E8, $A,  8,$12,  0
 			dc.b   0, $A,$10,$12,$E8
 			dc.b   0, $A,$10,$1B,  0
 			even
-byte_205BEA:	dc.b 4
+byte_205BEA:
+			dc.b 4
 			dc.b $F0,  5,  0,  0,$F0
 			dc.b $F0,  5,  8,  0,  0
 			dc.b   0,  5,$10,  0,$F0
 			dc.b   0,  5,$18,  0,  0
 			even
-byte_205C00:	dc.b 4
+byte_205C00:
+			dc.b 4
 			dc.b $F0,  5,  0,  4,$F0
 			dc.b $F0,  5,  8,  4,  0
 			dc.b   0,  5,$10,  4,$F0
 			dc.b   0,  5,$18,  4,  0
 			even
-byte_205C16:	dc.b 4
+byte_205C16:
+			dc.b 4
 			dc.b $E8, $A,  0,  8,$E8
 			dc.b $E8, $A,  8,  8,  0
 			dc.b   0, $A,$10,  8,$E8
 			dc.b   0, $A,$18,  8,  0
 			even
-byte_205C2C:	dc.b 4
+byte_205C2C:
+			dc.b 4
 			dc.b $F0,  5,  0,$11,$F0
 			dc.b $F0,  5,  0,$15,  0
 			dc.b   0,  5,$18,$15,$F0
 			dc.b   0,  5,$18,$11,  0
 			even
-byte_205C42:	dc.b 2
+byte_205C42:
+			dc.b 2
 			dc.b $F4,  6,  0,$19,$F0
 			dc.b $F4,  6,  8,$19,  0
 			even
@@ -8064,7 +8136,8 @@ obj0B_ani:
 			dc.w unk_205C54-obj0B_ani
 			dc.w unk_205C5C-obj0B_ani
 			dc.w unk_205C62-obj0B_ani
-unk_205C54: dc.b   3
+unk_205C54:
+			dc.b   3
 			dc.b   0
 			dc.b   4
 			dc.b   3
@@ -8072,13 +8145,15 @@ unk_205C54: dc.b   3
 			dc.b   2
 			dc.b $FC
 			even
-unk_205C5C: dc.b   3
+unk_205C5C:
+			dc.b   3
 			dc.b   0
 			dc.b   1
 			dc.b   2
 			dc.b $FC
 			even
-unk_205C62: dc.b   3
+unk_205C62:
+			dc.b   3
 			dc.b   6
 			dc.b   5
 			dc.b $FC
@@ -8092,36 +8167,47 @@ obj0B_map:
 			dc.w byte_205CA8-obj0B_map
 			dc.w byte_205CBE-obj0B_map
 			dc.w byte_205CC4-obj0B_map
-byte_205C74:	dc.b 2
+byte_205C74:
+			dc.b 2
 			dc.b $F0,  5,  0,  0,$FC
 			dc.b $F8,  0,  0,  4,$F4
 			even
-byte_205C80:	dc.b 2
+byte_205C80:
+			dc.b 2
 			dc.b $E0,  0,  0,  5,$F8
 			dc.b $E8, $E,  0,  6,$F0
 			even
-byte_205C8C:	dc.b 1
+byte_205C8C:
+			dc.b 1
 			dc.b $E0, $F,  0,$12,$F0
-byte_205C92:	dc.b 4
+			even
+byte_205C92:
+			dc.b 4
 			dc.b $D0,  6,  0,$22,$F8
 			dc.b $D8,  0,  0,$28,$F0
 			dc.b $E0,  0,  0,$29,  8
 			dc.b $E8, $E,  0,$2A,$F0
 			even
-byte_205CA8:	dc.b 4
+byte_205CA8:
+			dc.b 4
 			dc.b $C0,  0,  0,$36,$F8
 			dc.b $C8,  6,  0,$37,$F8
 			dc.b $D8,  0,  0,$3D,$F0
 			dc.b $E0, $F,  0,$3E,$F0
 			even
-byte_205CBE:	dc.b 1
+byte_205CBE:
+			dc.b 1
 			dc.b $F0,  9,  0,$4E,$F4
-byte_205CC4:	dc.b 1
+			even
+byte_205CC4:
+			dc.b 1
 			dc.b $F8,  4,  0,$54,$F8
+			even
 
 obj0D_ani:
 			dc.w unk_205CCC-obj0D_ani
-unk_205CCC: dc.b   0
+unk_205CCC:
+			dc.b   0
 			dc.b   0
 			dc.b   0
 			dc.b   1
@@ -8138,18 +8224,21 @@ unk_205CCC: dc.b   0
 obj0D_map:
 			dc.w byte_205CE8-obj0D_map
 			dc.w byte_205CDC-obj0D_map
-byte_205CDC:	dc.b 2
+byte_205CDC:
+			dc.b 2
 			dc.b $D0,  3,  0,  0,$E4
 			dc.b $F0,  1,  0,  4,$E4
 			even
-byte_205CE8:	dc.b 2
+byte_205CE8:
+			dc.b 2
 			dc.b $F8, $C,  0,  6,$E8
 			dc.b $F8,  4,  0, $A,  8
 			even
 
 obj0E_ani:
 			dc.w unk_205CF6-obj0E_ani
-unk_205CF6: dc.b   3
+unk_205CF6:
+			dc.b   3
 			dc.b   0
 			dc.b   1
 			dc.b   2
@@ -8160,17 +8249,24 @@ obj0E_map:
 			dc.w byte_205D02-obj0E_map
 			dc.w byte_205D08-obj0E_map
 			dc.w byte_205D0E-obj0E_map
-byte_205D02:	dc.b 1
+byte_205D02:
+			dc.b 1
 			dc.b $F0, $F,  0,  0,$F0
-byte_205D08:	dc.b 1
+			even
+byte_205D08:
+			dc.b 1
 			dc.b $F4, $A,  0,$10,$F4
-byte_205D0E:	dc.b 1
+			even
+byte_205D0E:
+			dc.b 1
 			dc.b $F8,  5,  0,$19,$F8
+			even
 
 obj18_ani:
 			dc.w unk_205D18-obj18_ani
 			dc.w unk_205D20-obj18_ani
-unk_205D18: dc.b   3
+unk_205D18:
+			dc.b   3
 			dc.b   0
 			dc.b   5
 			dc.b   6
@@ -8178,7 +8274,8 @@ unk_205D18: dc.b   3
 			dc.b   4
 			dc.b $FC
 			even
-unk_205D20: dc.b   3
+unk_205D20:
+			dc.b   3
 			dc.b   0
 			dc.b   1
 			dc.b   2
@@ -8195,15 +8292,19 @@ obj18_map:
 			dc.w byte_205D7E-obj18_map
 			dc.w byte_205D94-obj18_map
 			dc.w byte_205DA4-obj18_map
-byte_205D36:	dc.b 2
+byte_205D36:
+			dc.b 2
 			dc.b $F8,  5,  0,  0,$F0
 			dc.b $F8,  5,  8,  0,  0
 			even
-byte_205D42:	dc.b 3
+byte_205D42:
+			dc.b 3
 			dc.b $F0, $D,  0,  4,$F0
 			dc.b   0,  5,  0, $C,$F0
 			dc.b   0,  5,  8, $C,  0
-byte_205D52:	dc.b 4
+			even
+byte_205D52:
+			dc.b 4
 			dc.b $F0,  5,  0,$10,$F0
 			dc.b $F0,  5,  0,$14,  0
 			dc.b   0,  5,  0,$18,$F0
@@ -8215,17 +8316,21 @@ byte_205D68:	dc.b 4
 			dc.b   0, $A,$10,$1C,$E8
 			dc.b   0, $A,$18,$1C,  0
 			even
-byte_205D7E:	dc.b 4
+byte_205D7E:
+			dc.b 4
 			dc.b $E8, $A,  0,$25,$E8
 			dc.b $E8, $A,  8,$25,  0
 			dc.b   0, $A,$10,$25,$E8
 			dc.b   0, $A,$18,$25,  0
 			even
-byte_205D94:	dc.b 3
+byte_205D94:
+			dc.b 3
 			dc.b $F0, $D,  0,$2E,$F0
 			dc.b   0,  5,  0,$36,$F0
 			dc.b   0,  5,  8,$36,  0
-byte_205DA4:	dc.b 4
+			even
+byte_205DA4:
+			dc.b 4
 			dc.b $F0,  5,  0,$3A,$F0
 			dc.b $F0,  5,  0,$3E,  0
 			dc.b   0,  5,  0,$42,$F0
@@ -8237,26 +8342,30 @@ obj1F_ani:
 			dc.w unk_205DC6-obj1F_ani
 			dc.w unk_205DCC-obj1F_ani
 			dc.w unk_205DD2-obj1F_ani
-unk_205DC2: dc.b   3
+unk_205DC2:
+			dc.b   3
 			dc.b   0
 			dc.b   1
 			dc.b $FF
 			even
-unk_205DC6: dc.b   3
+unk_205DC6:
+			dc.b   3
 			dc.b   2
 			dc.b   3
 			dc.b   2
 			dc.b   3
 			dc.b $FC
 			even
-unk_205DCC: dc.b   1
+unk_205DCC:
+			dc.b   1
 			dc.b   5
 			dc.b   5
 			dc.b   4
 			dc.b   6
 			dc.b $FC
 			even
-unk_205DD2: dc.b $13
+unk_205DD2:
+			dc.b $13
 			dc.b   6
 			dc.b   7
 			dc.b $FF
@@ -8271,28 +8380,43 @@ obj1F_map:
 			dc.w byte_205E0A-obj1F_map
 			dc.w byte_205E10-obj1F_map
 			dc.w byte_205E20-obj1F_map
-byte_205DE6:	dc.b 1
+byte_205DE6:
+			dc.b 1
 			dc.b $F0,  1,  0,  0,$FC
-byte_205DEC:	dc.b 1
+			even
+byte_205DEC:
+			dc.b 1
 			dc.b $F0,  1,  8,  0,$FC
-byte_205DF2:	dc.b 1
+			even
+byte_205DF2:
+			dc.b 1
 			dc.b $F0,  5,  0,  2,$F8
-byte_205DF8:	dc.b 1
+			even
+byte_205DF8:
+			dc.b 1
 			dc.b $F0,  5,  0,  6,$F8
-byte_205DFE:	dc.b 2
+			even
+byte_205DFE:
+			dc.b 2
 			dc.b $E8,  9,  0,$1C,$F4
 			dc.b $F8,  0,  0,$22,$FC
 			even
-byte_205E0A:	dc.b 1
+byte_205E0A:
+			dc.b 1
 			dc.b $F0,  5,  0,$23,$F8
-byte_205E10:	dc.b 3
+			even
+byte_205E10:
+			dc.b 3
 			dc.b $D0, $A,  0, $A,$F4
 			dc.b $E8,  9,  0,$1C,$F4
 			dc.b $F8,  0,  0,$22,$FC
-byte_205E20:	dc.b 3
+			even
+byte_205E20:
+			dc.b 3
 			dc.b $D0, $A,  0,$13,$F4
 			dc.b $E8,  9,  0,$1C,$F4
 			dc.b $F8,  0,  0,$22,$FC
+			even
 ; ---------------------------------------------------------------------------
 
 loc_205E30:
@@ -9800,7 +9924,7 @@ off_206DBE:
 ; ---------------------------------------------------------------------------
 loc_206DC2:
 			addq.b	#2,(byte_FFF76C).w
-			lea	(unk_207000).l,a0
+			lea	(off_207000).l,a0
 			movea.l a0,a1
 			adda.w	(a0),a0
 			move.l	a0,(dword_FFF770).w
@@ -10045,8 +10169,18 @@ loc_206FF8:
 locret_206FFE:
 			rts
 ; ---------------------------------------------------------------------------
-unk_207000: incbin	"Object Positions/ObjPos.bin"
+off_207000:
+			dc.w unk_20700C-off_207000
+			dc.w unk_207B34-off_207000
+
+			dc.w $FFFF,0,0,0
+
+unk_20700C:
+			incbin	"Object Positions/ObjPos.bin"
 			even
+
+unk_207B34:
+			dc.w $FFFF,0,0
 ; ---------------------------------------------------------------------------
 obj07:
 			bsr.w	sub_2023EA
@@ -10252,6 +10386,7 @@ word_207D74:
 			dc.w $C00
 			dc.w $C00
 			dc.w $800
+
 off_207D7C:
 			dc.w unk_207D8C-off_207D7C
 			dc.w unk_207E16-off_207D7C
@@ -10261,26 +10396,27 @@ off_207D7C:
 			dc.w sub_207EA2-off_207D7C
 			dc.w sub_207EA2-off_207D7C
 			dc.w sub_207EA2-off_207D7C
-unk_207D8C: dc.b   0
+unk_207D8C:
+			dc.b   0
 			dc.b $88
 			dc.b $14
-			dc.b $40 ; @
+			dc.b $40
 			dc.b   0
 			dc.b $F0
 			dc.b $14
-			dc.b $78 ; x
+			dc.b $78
 			dc.b   1
 			dc.b   8
 			dc.b $14
 			dc.b $90
 			dc.b   1
-			dc.b $40 ; @
+			dc.b $40
 			dc.b $14
 			dc.b $90
 			dc.b   1
 			dc.b $E0
 			dc.b $14
-			dc.b $40 ; @
+			dc.b $40
 			dc.b   1
 			dc.b $F8
 			dc.b $14
@@ -10298,21 +10434,21 @@ unk_207D8C: dc.b   0
 			dc.b $14
 			dc.b   0
 			dc.b   1
-			dc.b $70 ; p
+			dc.b $70
 			dc.b $14
 			dc.b $20
 			dc.b   1
-			dc.b $68 ; h
+			dc.b $68
 			dc.b $14
-			dc.b $40 ; @
+			dc.b $40
 			dc.b   1
-			dc.b $70 ; p
+			dc.b $70
 			dc.b $14
-			dc.b $68 ; h
+			dc.b $68
 			dc.b   1
 			dc.b $A8
 			dc.b $16
-			dc.b $60 ; `
+			dc.b $60
 			dc.b   2
 			dc.b $18
 			dc.b $16
@@ -10336,15 +10472,15 @@ unk_207D8C: dc.b   0
 			dc.b   1
 			dc.b $98
 			dc.b $16
-			dc.b $58 ; X
+			dc.b $58
 			dc.b   1
 			dc.b $A0
 			dc.b $16
-			dc.b $40 ; @
+			dc.b $40
 			dc.b   1
 			dc.b $C8
 			dc.b $16
-			dc.b $50 ; P
+			dc.b $50
 			dc.b   1
 			dc.b $F0
 			dc.b $16
@@ -10372,11 +10508,11 @@ unk_207D8C: dc.b   0
 			dc.b   2
 			dc.b $D8
 			dc.b $16
-			dc.b $50 ; P
+			dc.b $50
 			dc.b   2
 			dc.b $C0
 			dc.b $16
-			dc.b $50 ; P
+			dc.b $50
 			dc.b   2
 			dc.b $A0
 			dc.b $16
@@ -10388,19 +10524,21 @@ unk_207D8C: dc.b   0
 			dc.b   2
 			dc.b $90
 			dc.b $17
-			dc.b $28 ; (
+			dc.b $28
 			dc.b   2
 			dc.b $A0
 			dc.b $17
-			dc.b $28 ; (
+			dc.b $28
 			dc.b   2
 			dc.b $E0
 			dc.b $17
 			dc.b   0
 			dc.b   2
 			dc.b $F0
-unk_207E16: dc.b   0
-			dc.b $44 ; D
+
+unk_207E16:
+			dc.b   0
+			dc.b $44
 			dc.b  $F
 			dc.b   8
 			dc.b   1
@@ -10420,29 +10558,29 @@ unk_207E16: dc.b   0
 			dc.b  $F
 			dc.b $E0
 			dc.b   2
-			dc.b $60 ; `
+			dc.b $60
 			dc.b $10
 			dc.b   0
 			dc.b   2
 			dc.b $90
 			dc.b $10
-			dc.b $30 ; 0
+			dc.b $30
 			dc.b   2
 			dc.b $A0
 			dc.b $10
-			dc.b $68 ; h
+			dc.b $68
 			dc.b   2
 			dc.b $88
 			dc.b $10
 			dc.b $80
 			dc.b   2
-			dc.b $50 ; P
+			dc.b $50
 			dc.b $10
-			dc.b $68 ; h
+			dc.b $68
 			dc.b   2
 			dc.b $18
 			dc.b $10
-			dc.b $30 ; 0
+			dc.b $30
 			dc.b   2
 			dc.b   0
 			dc.b  $F
@@ -10452,24 +10590,26 @@ unk_207E16: dc.b   0
 			dc.b  $F
 			dc.b $E0
 			dc.b   2
-			dc.b $60 ; `
+			dc.b $60
 			dc.b $10
 			dc.b   0
 			dc.b   2
 			dc.b $90
 			dc.b $10
-			dc.b $30 ; 0
+			dc.b $30
 			dc.b   2
 			dc.b $A0
 			dc.b $10
-			dc.b $68 ; h
+			dc.b $68
 			dc.b   2
 			dc.b $88
 			dc.b $11
 			dc.b $30
 			dc.b   1
 			dc.b $C8
-unk_207E5C: dc.b   0
+
+unk_207E5C:
+			dc.b   0
 			dc.b $44
 			dc.b $16
 			dc.b $30
@@ -10767,7 +10907,8 @@ loc_208118:
 			jsr	(displaysprite).l
 			jmp	(loc_206FB8).l
 ; ---------------------------------------------------------------------------
-off_208124: dc.w loc_208128-off_208124
+off_208124:
+			dc.w loc_208128-off_208124
 			dc.w loc_208152-off_208124
 ; ---------------------------------------------------------------------------
 loc_208128:
@@ -10874,6 +11015,7 @@ byte_20821C:
 			dc.b   5
 			dc.b   5
 			dc.b   5
+			even
 ; =============== S U B R O U T I N E =======================================
 sub_20822C:
 			move.w	obj.xpos(a1),d0
@@ -10967,25 +11109,30 @@ loc_208334:
 ; ---------------------------------------------------------------------------
 obj09_ani:
 			dc.w unk_20833E-obj09_ani
-unk_20833E: dc.b   1
+unk_20833E:
+			dc.b   1
 			dc.b   0
 			dc.b   1
 			dc.b   2
 			dc.b $FF
 			even
+
 obj09_map:
 			dc.w byte_20834A-obj09_map
 			dc.w byte_208356-obj09_map
 			dc.w byte_208362-obj09_map
-byte_20834A:	dc.b 2
+byte_20834A:
+			dc.b 2
 			dc.b $F8,  5,  0,  0,$F0
 			dc.b $F8,  5,  8,  0,  0
 			even
-byte_208356:	dc.b 2
+byte_208356:
+			dc.b 2
 			dc.b $F8,  5,  0,  0,$F0
 			dc.b $F8,  5,  8,  0,  0
 			even
-byte_208362:	dc.b 1
+byte_208362:
+			dc.b 1
 			dc.b $F8, $D,  0,  4,$F0
 ; ---------------------------------------------------------------------------
 obj1B:
@@ -10996,7 +11143,8 @@ obj1B:
 			jsr	(displaysprite).l
 			jmp	(loc_206FB8).l
 ; ---------------------------------------------------------------------------
-off_208382: dc.w loc_208386-off_208382
+off_208382:
+			dc.w loc_208386-off_208382
 			dc.w loc_2083B8-off_208382
 ; ---------------------------------------------------------------------------
 loc_208386:
@@ -11028,7 +11176,8 @@ locret_2083D8:
 obj1B_map:
 			dc.w byte_2083DC-obj1B_map
 
-byte_2083DC:	dc.b 2
+byte_2083DC:
+			dc.b 2
 			dc.b $F8,  2,  0,  0,$EC
 			dc.b $F0, $F,  0,  3,$F4
 			even
@@ -11048,7 +11197,8 @@ obj0F:
 			bhi.w	deleteobj
 			rts
 ; ---------------------------------------------------------------------------
-off_208416: dc.w loc_20841C-off_208416
+off_208416:
+			dc.w loc_20841C-off_208416
 			dc.w loc_20848A-off_208416
 			dc.w loc_2084AA-off_208416
 ; ---------------------------------------------------------------------------
@@ -11139,7 +11289,8 @@ loc_20852E:
 			bhi.w	deleteobj
 			rts
 ; ---------------------------------------------------------------------------
-off_20854E: dc.w loc_208568-off_20854E
+off_20854E:
+			dc.w loc_208568-off_20854E
 			dc.w loc_208624-off_20854E
 			dc.w loc_208670-off_20854E
 			dc.w loc_208686-off_20854E
@@ -11421,7 +11572,9 @@ loc_2088A0:
 off_2088B2:
 			dc.w unk_2088B6-off_2088B2
 			dc.w unk_2088C2-off_2088B2
-unk_2088B6: dc.b   0
+
+unk_2088B6:
+			dc.b   0
 			dc.b   0
 			dc.b   0
 			dc.b   0
@@ -11434,7 +11587,8 @@ unk_2088B6: dc.b   0
 			dc.b   0
 			dc.b $FC
 			even
-unk_2088C2: dc.b   0
+unk_2088C2:
+			dc.b   0
 			dc.b   4
 			dc.b   3
 			dc.b   3
@@ -11447,6 +11601,7 @@ unk_2088C2: dc.b   0
 			dc.b   3
 			dc.b $FC
 			even
+
 off_2088CE:
 			dc.w byte_2088DA-off_2088CE
 			dc.w byte_2088E5-off_2088CE
@@ -11454,27 +11609,37 @@ off_2088CE:
 			dc.w byte_2088FB-off_2088CE
 			dc.w byte_208901-off_2088CE
 			dc.w byte_208907-off_2088CE
-byte_2088DA:	dc.b 2
+
+byte_2088DA:
+			dc.b 2
 			dc.b $F8, $C,  0,  0,$F0
 			dc.b   0, $C,  0,  4,$F0
-byte_2088E5:	dc.b 1
+byte_2088E5:
+			dc.b 1
 			dc.b   0, $C,  0,  0,$F0
-byte_2088EB:	dc.b 3
+byte_2088EB:
+			dc.b 3
 			dc.b $E8, $C,  0,  0,$F0
 			dc.b $F0,  5,  0,  8,$F8
 			dc.b   0, $C,  0, $C,$F0
-byte_2088FB:	dc.b 1
+byte_2088FB:
+			dc.b 1
 			dc.b $F0,  7,  0,  0,$F8
-byte_208901:	dc.b 1
+byte_208901:
+			dc.b 1
 			dc.b $F0,  3,  0,  4,$F8
-byte_208907:	dc.b 4
+byte_208907:
+			dc.b 4
 			dc.b $F0,  3,  0,  4,$10
 			dc.b $F8,  9,  0,  8,$F8
 			dc.b $F0,  0,  0,  0,$F8
 			dc.b   8,  0,  0,  3,$F8
+
 off_20891C:
 			dc.w unk_20891E-off_20891C
-unk_20891E: dc.b   0
+
+unk_20891E:
+			dc.b   0
 			dc.b   0
 			dc.b   1
 			dc.b   1
@@ -11487,67 +11652,88 @@ unk_20891E: dc.b   0
 			dc.b   1
 			dc.b $FC
 			even
+
 obj0A_map:
 			dc.w byte_208936-obj0A_map
 			dc.w byte_208942-obj0A_map
 			dc.w byte_208948-obj0A_map
+
 obj0A_map_2:
 			dc.w byte_208958-obj0A_map_2
 			dc.w byte_208964-obj0A_map_2
 			dc.w byte_20896A-obj0A_map_2
-byte_208936:	dc.b 2
+
+byte_208936:
+			dc.b 2
 			dc.b $F8, $C,  0,  0,$F0
 			dc.b   0, $C,  0,  4,$F0
 			even
-byte_208942:	dc.b 1
+byte_208942:
+			dc.b 1
 			dc.b   0, $C,  0,  0,$F0
-byte_208948:	dc.b 3
+byte_208948:
+			dc.b 3
 			dc.b $E0, $C,  0,  0,$F0
 			dc.b $E8,  6,  0,  8,$F8
 			dc.b   0, $C,  0, $E,$F0
-byte_208958:	dc.b 2
+byte_208958:
+			dc.b 2
 			dc.b $F0,  3,  0,$12,  0
 			dc.b $F0,  3,  0,$16,$F8
 			even
-byte_208964:	dc.b 1
+byte_208964:
+			dc.b 1
 			dc.b $F0,  3,  0,$12,$F8
-byte_20896A:	dc.b 3
+byte_20896A:
+			dc.b 3
 			dc.b $F0,  3,  0,$12,$18
 			dc.b $F8,  9,  0,$1A,  0
 			dc.b $F0,  3,  0,$20,$F8
+
 obj0A_map_3:
 			dc.w byte_208980-obj0A_map_3
 			dc.w byte_208990-obj0A_map_3
 			dc.w byte_2089A6-obj0A_map_3
-byte_208980:	dc.b 3
+
+byte_208980:
+			dc.b 3
 			dc.b $F0,  8,  0,  0,$F0
 			dc.b $F8, $D,  0,  3,$F0
 			dc.b   8,  8,  0, $B,$F8
-byte_208990:	dc.b 4
+byte_208990:
+			dc.b 4
 			dc.b $F0,  5,  0, $E,$F0
 			dc.b $F8,  0,  0,$12,  0
 			dc.b   0,  0,  0,$13,$F0
 			dc.b   0,  9,  0,$14,$F8
 			even
-byte_2089A6:	dc.b 5
+byte_2089A6:
+			dc.b 5
 			dc.b $E0,  8,  0,  0,  0
 			dc.b $E8, $E,  0,$1A,  0
 			dc.b $F0,  1,  0,$26,$F8
 			dc.b $F8,  1,  0,$28,$F0
 			dc.b   0,  5,  0,$2A,$F8
+
 off_2089C0:
 			dc.w unk_2089C2-off_2089C0
-unk_2089C2: dc.b   8
+
+unk_2089C2:
+			dc.b   8
 			dc.b   0
 			dc.b   1
 			dc.b $FF
 			even
+
 obj0F_map:
 			dc.w byte_2089CA-obj0F_map
 			dc.w byte_2089D0-obj0F_map
-byte_2089CA:	dc.b 1
+
+byte_2089CA:
+			dc.b 1
 			dc.b $F8,  5,  0,  0,$F8
-byte_2089D0:	dc.b 1
+byte_2089D0:
+			dc.b 1
 			dc.b $F8,  5,  0,  4,$F8
 ; ---------------------------------------------------------------------------
 obj10:
