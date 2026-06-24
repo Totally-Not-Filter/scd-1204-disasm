@@ -130,9 +130,11 @@ byte_FF1886:	rs.b 1
 			rs.b 3
 byte_FF188A:	rs.b 1
 			rs.b $75
-byte_FF1900:	rs.b $300
-byte_FF1900_end:	rs.b 0
-			rs.b $6400
+powerupwrtwk:	rs.b $300
+powerupwrtwk_end:	rs.b 0
+			rs.b $180
+powerupwrtwk_dma_end:	rs.b 0
+			rs.b $6280
 	rsreset
 
 	rsset	$FFFF8000
@@ -143,10 +145,14 @@ byte_FFA800:	rs.b $200
 bitdevwk:	rs.b $200
 spr_list:	rs.b $400
 blkwk:		rs.b $1800
-playwrtwk:	rs.b $300
+playwrtwk:	rs.b $2E0
+playwrtwk_end:	rs.b 0
+			rs.b $20
 playposiwk:	rs.b $100
-hscrollwk:	rs.b $400
+hscrollwk:	rs.b $380
 hscrollwk_end:	rs.b 0
+			rs.b $80
+hscrollwk_end_padded:	rs.b 0
 actwk:		rs.b obj
 byte_FFD040:	rs.b obj
 byte_FFD080:	rs.b obj

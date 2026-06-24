@@ -37,14 +37,14 @@ scpu_r11bload:	rs.b	1	; $02
 scpu_r11cload:	rs.b	1	; $03
 scpu_r11dload:	rs.b	1	; $04
 scpu_mdinit:	rs.b	1	; $05
-scpu_unk0:	rs.b	1	; $06
-scpu_unk1:	rs.b	1	; $07
-scpu_unk2:	rs.b	1	; $08
-scpu_unk3:	rs.b	1	; $09
-scpu_unk4:	rs.b	1	; $0A
-scpu_unk5:	rs.b	1	; $0B
-scpu_unk6:	rs.b	1	; $0C
-scpu_unk7:	rs.b	1	; $0D
+scpu_unk0:		rs.b	1	; $06
+scpu_unk1:		rs.b	1	; $07
+scpu_unk2:		rs.b	1	; $08
+scpu_unk3:		rs.b	1	; $09
+scpu_unk4:		rs.b	1	; $0A
+scpu_unk5:		rs.b	1	; $0B
+scpu_unk6:		rs.b	1	; $0C
+scpu_unk7:		rs.b	1	; $0D
 scpu_fadeCDA:	rs.b	1	; $0E Fade out CDDA music
 scpu_r11aMUS:	rs.b	1	; $0F Track 2 (Salad Plain Present)
 scpu_timeattackMUS:	rs.b	1	; $10 Track 3 (Collision Chaos Present)
@@ -66,15 +66,15 @@ ypos:		ds.l 1
 xvel:		ds.w 1
 yvel:		ds.w 1
 inertia:	ds.w 1
-field_16:	ds.b 1
-field_17:	ds.b 1
+height:		ds.b 1
+width:		ds.b 1
 priority:	ds.b 1
 field_19:	ds.b 1
 frame:		ds.b 1
-field_1B:	ds.b 1
+aniframe:	ds.b 1
 ani:		ds.b 1
 prevani:	ds.b 1
-field_1E:	ds.b 1
+time:		ds.b 1
 field_1F:	ds.b 1
 colflag:	ds.b 1
 field_21:	ds.b 1
@@ -84,7 +84,7 @@ routine:	ds.b 1
 routine2:	ds.b 1
 angle:		ds.b 1
 field_27:	ds.b 1
-field_28:	ds.b 1
+subtype:	ds.b 1
 field_29:	ds.b 1
 field_2A:	ds.b 1
 field_2B:	ds.b 1
